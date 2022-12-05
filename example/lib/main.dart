@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:liquid_pull_to_refresh/liquid_pull_to_refresh.dart';
+import 'package:liquid_pull_to_refresh/liquid_pull_to_refresh_pro.dart';
 
 void main() => runApp(const MyApp());
 
@@ -34,8 +34,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  final GlobalKey<LiquidPullToRefreshState> _refreshIndicatorKey =
-      GlobalKey<LiquidPullToRefreshState>();
+  final GlobalKey<LiquidPullToRefreshProState> _refreshIndicatorKey =
+      GlobalKey<LiquidPullToRefreshProState>();
 
   static int refreshNum = 10; // number that changes when refreshed
   Stream<int> counterStream =
@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      body: LiquidPullToRefresh(
+      body: LiquidPullToRefreshPro(
         key: _refreshIndicatorKey,
         onRefresh: _handleRefresh,
         showChildOpacityTransition: false,
