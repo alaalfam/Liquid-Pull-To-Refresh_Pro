@@ -591,8 +591,7 @@ class LiquidPullToRefreshState extends State<LiquidPullToRefresh>
               return Opacity(
                   // -0.01 is done for elasticOut curve
                   opacity: (widget.showChildOpacityTransition)
-                      ? (_childOpacityAnimation.value - (1 / 3) - 0.01)
-                          .clamp(0.0, 1.0)
+                      ? (_childOpacityAnimation.value).clamp(0.0, 1.0)
                       : 1.0,
                   child: child);
             }
