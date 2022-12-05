@@ -5,8 +5,8 @@ import 'dart:math';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:liquid_pull_to_refresh/src/circular_progress.dart';
-import 'package:liquid_pull_to_refresh/src/clipper.dart';
+import 'package:liquid_pull_to_refresh_pro/src/circular_progress.dart';
+import 'package:liquid_pull_to_refresh_pro/src/clipper.dart';
 
 // The over-scroll distance that moves the indicator to its maximum
 // displacement, as a percentage of the scrollable's container extent.

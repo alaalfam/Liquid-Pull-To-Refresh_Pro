@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:liquid_pull_to_refresh/liquid_pull_to_refresh_pro.dart';
+import 'package:liquid_pull_to_refresh_pro/liquid_pull_to_refresh_pro.dart';
 
 void main() => runApp(const MyApp());
 
